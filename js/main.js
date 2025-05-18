@@ -16,8 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- API Key ---
     // WARNING: THIS IS INSECURE FOR PRODUCTION. Key should be handled by a backend.
-    const GROQ_API_KEY = ''; // Replace with your actual key if needed
-
+    const GROQ_API_KEY = ' Replace with your actual key if needed'; 
     // --- Utility Functions ---
     function showLoading(show) {
         loadingIndicator.style.display = show ? 'flex' : 'none';
