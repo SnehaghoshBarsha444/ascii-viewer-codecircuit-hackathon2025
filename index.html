@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASCII Art Generator</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Add this to your HTML file, before your main script -->
+    <script src="https://unpkg.com/groq-sdk"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>ASCII Art Generator</h1>
+            <div class="theme-switcher">
+                <label for="themeToggle">Dark Mode</label>
+                <input type="checkbox" id="themeToggle">
+            </div>
+        </header>
+
+        <main>
+            <section class="input-section">
+                <h2>Create Your ASCII Art</h2>
+
+                <div class="input-group">
+                    <label for="textInput">Enter Text (Live Preview):</label>
+                    <textarea id="textInput" rows="3" placeholder="Type letters, numbers, symbols..."></textarea>
+                </div>
+
+                <div class="input-group">
+                    <label for="imageDescriptionInput">Or, Enter Image Description (uses AI):</label>
+                    <input type="text" id="imageDescriptionInput" placeholder="e.g., a cat sitting on a chair">
+                    <button id="generateFromDescriptionBtn">Generate from Description</button>
+                </div>
+                
+                <div class="input-group">
+                    <label for="imageUploadInput">Or, Upload an Image:</label>
+                    <input type="file" id="imageUploadInput" accept="image/*">
+                </div>
+            </section>
+
+            <section class="output-section">
+                <h2>ASCII Output</h2>
+                <div class="output-controls">
+                    <div class="control-item">
+                        <label for="fontSizeSlider">Font Size:</label>
+                        <input type="range" id="fontSizeSlider" min="5" max="20" value="10">
+                        <span id="fontSizeValue">10px</span>
+                    </div>
+                    <div class="control-item">
+                        <label for="asciiFontSelect">Text Art Style:</label>
+                        <select id="asciiFontSelect">
+                            <option value="basic">Basic Monospace</option>
+                            <option value="block">Block Letters</option>
+                            <!-- Add more font styles here -->
+                        </select>
+                    </div>
+                    <button id="copyBtn">Copy to Clipboard</button>
+                    <button id="downloadBtn">Download .txt</button>
+                </div>
+                <pre id="asciiOutput">Your ASCII art will appear here.</pre>
+                <div id="loadingIndicator" class="loading-indicator" style="display: none;">
+                    <div class="spinner"></div>
+                    <p>Generating ASCII art...</p>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>© 2023 ASCII Art Generator. For demonstration purposes.</p>
+            <p style="color: red; font-weight: bold;">WARNING: Using the OpenAI API key directly in the frontend is insecure for production.</p>
+        </footer>
+    </div>
+
+    <script src="js/main.js"></script></body>
+</html>
