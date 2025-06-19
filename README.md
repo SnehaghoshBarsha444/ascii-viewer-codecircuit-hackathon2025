@@ -124,4 +124,4 @@ Contributions are welcome! If you have suggestions for improvements or bug fixes
 
 ## 📄 License
 
-This project is for demonstration purposes. If you intend to use it as a base for your own project, consider adding an appropriate open-source license (e.g., MIT License).
+[MIT LICENSE](https://github.com/SnehaghoshBarsha444/ascii-viewer-codecircuit-hackathon2025/blob/main/LICENSE)
