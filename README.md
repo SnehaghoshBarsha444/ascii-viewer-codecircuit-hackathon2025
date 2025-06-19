@@ -61,7 +61,7 @@ A versatile web-based application that allows users to generate ASCII art from v
     *   Open the `js/main.js` file.
     *   Locate the `GROQ_API_KEY` constant:
         ```javascript
-        const GROQ_API_KEY = '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'; // Replace with your actual key
+        const GROQ_API_KEY = 'gsk.............'; // Replace with your actual key
         ```
     *   Replace the placeholder `'gsk_...'` with your actual Groq API key.
 
