@@ -122,6 +122,15 @@ Contributions are welcome! If you have suggestions for improvements or bug fixes
 5.  Push to the branch (`git push origin feature/YourFeature`).
 6.  Open a Pull Request.
 
+## 📬 **Contact Information**  
+
+For inquiries or collaboration opportunities, connect via: 
+- **Email**: [Contact Me](mailto:miss.webdesigner0013@gmail.com)
+- **GitHub**: [GitHub Profile](https://github.com/SnehaghoshBarsha444)
+- **LinkedIn**: [LinkedIn Profile](https://www.linkedin.com/in/sneha-ghosh-technical-isopod075/)
+- **Twitter**: [@IsopodTechnical](https://x.com/IsopodTechnical)  
+- **Medium**: [Medium Profile](https://medium.com/@Technical_Isopod_075)
+
 ## 📄 License
 
 [MIT LICENSE](https://github.com/SnehaghoshBarsha444/ascii-viewer-codecircuit-hackathon2025/blob/main/LICENSE)
